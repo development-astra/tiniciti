@@ -157,18 +157,69 @@
     </section><!-- End Hero Section -->
 
     <!-- Limited-Time Offer -->
-    <section id="limited-time-offer" class="limited-time-offer p-0">
-      <div class="container-fluid d-flex justify-content-center align-items-center bg-secondary pt-2 pb-2">
-        <h4 class="archivo-expanded-400 fs-4 text-uppercase text-white m-0">
-          limited time offers!
-        </h4>
-      </div>
+    <section class="limited-offer bg-light py-4 p-0">
+      <div class="container">
+        <div class="row align-items-center">
 
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
+          <!-- Left Side -->
+          <div class="col-md-3 text-start py-4">
+            <h4 class="archivo-700 fw-bold fs-2 text-white text-uppercase mb-0">Limited<br>Time Offers!</h4>
+          </div>
+
+          <!-- Middle Side -->
+          <div class="col-md-3 text-start py-4">
+            <h2 class="archivo-900 fw-bold fs-1 text-secondary mb-2">10% OFF</h2>
+            <p class="archivo-500 fw-bold fs-5 mb-0 text-secondary fw-semibold">ON YOUR FIRST ORDER</p>
+          </div>
+
+          <!-- Right Side (countdown timer) -->
+          <div class="col-md-6 text-center py-4">
+            <div class="d-flex justify-content-end align-items-center h-100">
+
+              <!-- Countdown Section -->
+              <div class="countdown-timer">
+                <div class="container text-center">
+                  <div class="row g-3 justify-content-center">
+
+                    <!-- Days -->
+                    <div class="col-6 col-md-3">
+                      <div class="count-box p-4 rounded-3">
+                        <h3 id="days" class="fw-bold text-primary">00</h3>
+                        <small class="text-muted">Days</small>
+                      </div>
+                    </div>
+
+                    <!-- Hours -->
+                    <div class="col-6 col-md-3">
+                      <div class="count-box p-4 rounded-3">
+                        <h3 id="hours" class="fw-bold text-primary">00</h3>
+                        <small class="text-muted">Hours</small>
+                      </div>
+                    </div>
+
+                    <!-- Minutes -->
+                    <div class="col-6 col-md-3">
+                      <div class="count-box p-4 rounded-3">
+                        <h3 id="minutes" class="fw-bold text-primary">00</h3>
+                        <small class="text-muted">Minutes</small>
+                      </div>
+                    </div>
+
+                    <!-- Seconds -->
+                    <div class="col-6 col-md-3">
+                      <div class="count-box p-4 rounded-3">
+                        <h3 id="seconds" class="fw-bold text-primary">00</h3>
+                        <small class="text-muted">Seconds</small>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
     </section><!-- End Limited Time Offer -->
@@ -814,6 +865,8 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/countdown-timer/countdown.js"></script>
+
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
