@@ -108,38 +108,37 @@
                 Get your free quotation today
               </h3>
               <h4 class="archivo-expanded-400 fs-5 text-uppercase text-center text-dark">Speak With a Specialist</h4>
-              <form action="#" method="post" class="contact-form mt-4">
+              <form action="assets/vendor/php-email-form/request-form.php" method="post" class="contact-form mt-4">
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingName" placeholder="John Doe" required>
+                  <input type="text" class="form-control" id="floatingName" name="name" placeholder="John Doe" required>
                   <label for="floatingName">Full Name</label>
                 </div><!-- Full Name -->
 
                 <div class="form-floating mb-3">
-                  <input type="tel" class="form-control" id="floatingPhone" placeholder="123-456-7890" required>
+                  <input type="tel" class="form-control" id="floatingPhone" name="phone" placeholder="123-456-7890"
+                    required>
                   <label for="floatingPhone">Phone Number</label>
                 </div><!-- Phone Number -->
 
                 <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
+                  <input type="email" class="form-control" id="floatingEmail" name="email"
+                    placeholder="name@example.com" required>
                   <label for="floatingEmail">Email address</label>
                 </div><!-- Email Address -->
 
                 <div class="form-floating mb-3">
-                  <textarea class="form-control" placeholder="Leave a message here" id="floatingMessage"
-                    style="height: 120px"></textarea>
+                  <textarea class="form-control" id="floatingMessage" name="message" placeholder="Leave a message here"
+                    style="height: 120px" required></textarea>
                   <label for="floatingMessage">Your Message</label>
                 </div><!-- Message -->
 
-                <div class="form-check form-group ps-0 pb-3 d-none">
-                  <input id="privacy-policy" type="checkbox" name="privacy" value="accept" required>
-                  <label class="form-check-label ps-1" for="privacy-policy">
-                    Accept our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>
-                  </label>
-                </div>
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
 
-                <button type="submit" class="btn btn-primary w-100 archivo-900 text-uppercase fs-4">
-                  Request a free quote
-                </button>
+                  <button type="submit" class="btn btn-primary w-100 archivo-900 text-uppercase fs-4">
+                    Request a free quote
+                  </button>
+                </div>
 
                 <div class="text-center mt-3">
                   <p class="manrope-400 fs-6">
@@ -147,7 +146,7 @@
                     All of your personal information is stored in a safe location.
                   </p>
                 </div>
-              </form>
+              </form><!-- Request Form -->
             </div>
           </div><!-- Right Contact Form -->
 
