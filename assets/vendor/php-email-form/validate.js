@@ -42,16 +42,17 @@
           if (loading) loading.style.display = "none";
 
           if (data.trim() === 'OK') {
-            window.location.href = "thank-you.html";
+            // Redirect correctly relative to forms/request-form.php
+            window.location.href = "../thank-you.html";
           } else {
-            window.location.href = "form-error.html";
+            window.location.href = "../form-error.html";
           }
         })
         .catch((error) => {
           // Hide loader
           if (loading) loading.style.display = "none";
           console.error("Form error:", error);
-          window.location.href = "form-error.html";
+          window.location.href = "../form-error.html";
         });
     });
   });

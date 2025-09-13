@@ -1420,7 +1420,7 @@ section,
 }
 
 .error-404 .error-illustration i {
-  font-size: 9rem;
+  font-size: 9rem !important;
   color: color-mix(in srgb, var(--accent-color), transparent 10%);
   position: relative;
   z-index: 2;
