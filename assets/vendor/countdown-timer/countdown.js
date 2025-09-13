@@ -1,6 +1,17 @@
 // countdown.js
-function startCountdown(targetDate) {
-    let countdownDate = new Date(targetDate).getTime();
+function startCountdown() {
+    // Try to get the saved target date from localStorage
+    let countdownDate = localStorage.getItem("countdownTarget");
+
+    if (!countdownDate) {
+        // If no date saved, set initial target date (5 days from now)
+        const initialDate = new Date();
+        initialDate.setDate(initialDate.getDate() + 5);
+        countdownDate = initialDate.getTime();
+        localStorage.setItem("countdownTarget", countdownDate);
+    } else {
+        countdownDate = parseInt(countdownDate, 10);
+    }
 
     const interval = setInterval(function () {
         const now = new Date().getTime();
@@ -18,23 +29,22 @@ function startCountdown(targetDate) {
         document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, "0");
         document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, "0");
 
-        // If finished -> restart for the next 5 days
+        // If countdown finished -> restart for the next 5 days
         if (distance < 0) {
             clearInterval(interval);
 
-            // Get current countdown date
-            const currentDate = new Date(targetDate);
+            // Add 5 days to current target date
+            const newDate = new Date(countdownDate);
+            newDate.setDate(newDate.getDate() + 5);
 
-            // Add 5 days
-            currentDate.setDate(currentDate.getDate() + 5);
+            // Save new date in localStorage
+            localStorage.setItem("countdownTarget", newDate.getTime());
 
-            // Restart countdown with new date
-            startCountdown(currentDate);
+            // Restart countdown
+            startCountdown();
         }
     }, 1000);
 }
 
-// Initialize countdown (example: starting today + 5 days)
-const initialDate = new Date();
-initialDate.setDate(initialDate.getDate() + 5);
-startCountdown(initialDate);
+// Initialize countdown
+startCountdown();

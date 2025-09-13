@@ -1088,12 +1088,36 @@ section,
   font-size: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .limited-offer {
+    background-color: #ededed !important;
+  }
+
+  .limited-offer h4 {
+    color: #021418 !important;
+  }
+}
+
+.limited-offer .percent-off {
+  font-size: 64px;
+  color: #9AACC2;
+}
+
 /* Countdown Timer */
 .count-box {
   width: 100%;
   aspect-ratio: 1 / 1;
   min-width: 100px;
   border: 1px dashed #9AACC2;
+}
+
+@media screen and (max-width: 767px) {
+  .count-box {
+    width: 100%;
+    aspect-ratio: auto;
+    min-width: 100px;
+    border: 1px dashed #9AACC2;
+  }
 }
 
 /*--------------------------------------------------------------
