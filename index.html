@@ -108,7 +108,7 @@
                 Get your free quotation today
               </h3>
               <h4 class="archivo-expanded-400 fs-5 text-uppercase text-center text-dark">Speak With a Specialist</h4>
-              <form action="assets/vendor/php-email-form/request-form.php" method="post" class="contact-form mt-4">
+              <form action="forms/request-form.php" method="post" class="contact-form mt-4">
                 <div class="form-floating mb-3">
                   <input type="text" class="form-control" id="floatingName" name="name" placeholder="John Doe" required>
                   <label for="floatingName">Full Name</label>
@@ -782,38 +782,42 @@
 
           <!-- Right Column: Contact Form -->
           <div class="col-lg-6">
-            <form>
+            <form action="forms/request-form-footer.php" method="post" class="contact-form mt-4">
               <div class="row g-3">
                 <div class="col-md-12">
-                  <div class="form-floating mb-2">
-                    <input type="text" class="form-control" id="floatingName" placeholder="John Doe" required>
-                    <label for="floatingName">Full Name</label>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="footerName" name="name" placeholder="John Doe" required>
+                    <label for="footerName">Full Name</label>
                   </div>
                 </div><!-- Full Name -->
 
                 <div class="col-md-6">
-                  <div class="form-floating mb-2">
-                    <input type="tel" class="form-control" id="floatingPhone" placeholder="+63 912 345 6789" required>
-                    <label for="floatingPhone">Phone Number</label>
+                  <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="footerPhone" name="phone" placeholder="123-456-7890"
+                      required>
+                    <label for="footerPhone">Phone Number</label>
                   </div>
                 </div><!-- Phone Number -->
 
                 <div class="col-md-6">
-                  <div class="form-floating mb-2">
-                    <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
-                    <label for="floatingEmail">Email address</label>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="footerEmail" name="email"
+                      placeholder="name@example.com" required>
+                    <label for="footerEmail">Email Address</label>
                   </div>
                 </div><!-- Email Address -->
 
                 <div class="col-md-12">
-                  <div class="form-floating mb-2">
-                    <textarea class="form-control" placeholder="Leave a message here" id="floatingMessage"
-                      style="height: 150px" required></textarea>
-                    <label for="floatingMessage">Message</label>
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" id="footerMessage" name="message" placeholder="Leave a message here"
+                      style="height: 120px" required></textarea>
+                    <label for="footerMessage">Your Message</label>
                   </div>
                 </div><!-- Message -->
 
-                <div class="col-12">
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+
                   <button type="submit" class="btn btn-primary w-100 archivo-900 text-uppercase fs-4">
                     Request a free quote
                   </button>
