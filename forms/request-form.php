@@ -19,9 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // SMTP configuration
         $mail->isSMTP();
-        $mail->Host       = 'smtp.yourdomain.com';   // your SMTP server
+        $mail->Host       = 'smtp.gmail.com';   // your SMTP server
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'you@yourdomain.com';    // SMTP username
+        $mail->Username   = 'harry@astraresults.com';    // SMTP username
         $mail->Password   = 'yourpassword';          // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // or PHPMailer::ENCRYPTION_SMTPS
         $mail->Port       = 587; // 465 for SMTPS
