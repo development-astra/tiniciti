@@ -905,10 +905,30 @@ section,
 @media (min-width: 1200px) {
   .hero {
     position: relative;
-    /* make sure parent is positioned */
   }
 
-  .hero:after {
+  .hero.camera-inspection:after {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    /* Layered backgrounds */
+    background-image:
+      linear-gradient(180deg,
+        rgb(59, 54, 129, 0) 0%,
+        rgba(5, 161, 218, 0.5) 100%),
+      url("/assets/img/camera-inspection/hero-bg.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hero.drain-cleaning:after {
     position: absolute;
     content: "";
     width: 60%;
@@ -926,6 +946,27 @@ section,
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hero.trenchless-pipelining:after {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    /* Layered backgrounds */
+    background-image:
+      linear-gradient(180deg,
+        rgb(59, 54, 129, 0) 0%,
+        rgba(5, 161, 218, 0.5) 100%),
+      url("/assets/img/trenchless-pipelining/hero-bg.webp");
+
+    background-size: cover;
+    background-position: bottom left;
     background-repeat: no-repeat;
   }
 }
@@ -1174,8 +1215,9 @@ section,
 # Why Choose Us Section
 --------------------------------------------------------------*/
 .why-choose-us {
+  position: relative;
   padding: 60px 20px !important;
-  background-image: url("/assets/img/drain-cleaning/why-choose-us-bg.webp");
+  background-image: url("/assets/img/trenchless-pipelining/why-choose-us-bg.webp");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1284,7 +1326,7 @@ section,
 .advantages {
   position: relative;
   background-image: url("/assets/img/camera-inspection/advantage-bg.webp");
-  background-position: left center;
+  background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
 }
