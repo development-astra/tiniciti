@@ -905,7 +905,7 @@ section,
       linear-gradient(180deg,
         rgb(59, 54, 129, 0) 0%,
         rgba(5, 161, 218, 0.5) 100%),
-      url("/assets/img/camera-inspection/hero-bg.webp");
+      url("/assets/img/drain-cleaning/hero-bg.webp");
 
     background-size: cover;
     background-position: center;
@@ -1158,7 +1158,7 @@ section,
 --------------------------------------------------------------*/
 .why-choose-us {
   padding: 60px 20px !important;
-  background-image: url("/assets/img/camera-inspection/why-choose-us-bg.webp");
+  background-image: url("/assets/img/drain-cleaning/why-choose-us-bg.webp");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1188,8 +1188,8 @@ section,
 }
 
 .why-choose-us a {
-  background-color: #9aacc2;
-  border: 1px solid #9aacc2;
+  background-color: #18538d;
+  border: 1px solid #18538d;
 }
 
 .why-choose-us .custom-icon img {
