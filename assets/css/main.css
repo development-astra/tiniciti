@@ -1060,6 +1060,7 @@ section,
   }
 
   .hero .btn-get-started {
+    background-color: rgb(24, 83, 141, 0.1) !important;
     width: 100%;
     margin-bottom: 25px;
   }
