@@ -456,10 +456,6 @@ h6 {
     margin: 0 15px 0 0;
     padding: 6px 20px;
   }
-
-  .header .navmenu {
-    order: 3;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -476,6 +472,27 @@ h6 {
   .scrolled .header {
     padding: 15px 0 0;
     box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  /* Default state */
+  .header .logo img.white-logo {
+    display: none !important;
+  }
+
+  .header .logo img.colored-logo {
+    display: block;
+  }
+
+  /* When scrolled */
+  .scrolled .header .logo img.colored-logo {
+    display: none !important;
+  }
+
+  .scrolled .header .logo img.white-logo {
+    display: block !important;
   }
 }
 
