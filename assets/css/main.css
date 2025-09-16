@@ -971,7 +971,6 @@ section,
   }
 }
 
-
 .hero:before {
   position: absolute;
   content: "";
@@ -1055,8 +1054,9 @@ section,
 
   .hero h4,
   .hero h1,
-  .hero blockquote {
+  .hero blockquote p {
     text-align: center;
+    color: #021418 !important;
   }
 
   .hero .btn-get-started {
