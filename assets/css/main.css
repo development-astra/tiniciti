@@ -380,7 +380,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 48px;
   margin-right: 8px;
 }
 
@@ -404,7 +404,7 @@ h6 {
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #19538E;
   font-family: var(--manrope);
   font-size: 18px;
   width: 40%;
@@ -482,7 +482,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #ffffff;
+  --background-color: #041c36;
 }
 
 /*--------------------------------------------------------------
@@ -886,16 +886,33 @@ section,
 }
 
 @media (min-width: 1200px) {
+  .hero {
+    position: relative;
+    /* make sure parent is positioned */
+  }
+
   .hero:after {
     position: absolute;
     content: "";
     width: 60%;
-    background-image: linear-gradient(180deg, color-mix(in srgb, #E2E2E2, transparent 0%), color-mix(in srgb, #E2E2E2, transparent 0%) 100%), linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0) 100%);
+    height: 100%;
     top: 0;
-    bottom: 0;
+    left: 0;
     z-index: 2;
+
+    /* Layered backgrounds */
+    background-image:
+      linear-gradient(180deg,
+        rgb(59, 54, 129, 0) 0%,
+        rgba(5, 161, 218, 0.5) 100%),
+      url("/assets/img/camera-inspection/hero-bg.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
+
 
 .hero:before {
   position: absolute;
@@ -935,8 +952,8 @@ section,
 }
 
 .hero .btn-get-started {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  color: #18538d;
+  background: #ffffff;
   font-family: var(--heading-font);
   font-weight: 600;
   font-size: 14px;
@@ -950,41 +967,29 @@ section,
 
 .hero .btn-get-started:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+  animation: pulse-once 0.3s ease;
 }
 
-.hero .btn-watch-video {
-  font-size: 16px;
-  transition: 0.5s;
-  margin-left: 25px;
-  color: var(--default-color);
-  font-weight: 600;
+/* Keyframes for pulse effect */
+@keyframes pulse-once {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
-.hero .btn-watch-video i {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 32px;
-  transition: 0.3s;
-  line-height: 0;
-  margin-right: 8px;
-}
-
-.hero .btn-watch-video:hover {
-  color: var(--default-color);
-}
-
-.hero .btn-watch-video:hover i {
-  color: var(--default-color);
-}
 
 @media (max-width: 640px) {
   .hero h1 {
     font-size: 28px;
     line-height: 36px;
-  }
-
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
-    font-size: 13px;
   }
 }
 
@@ -1029,7 +1034,7 @@ section,
 }
 
 .hero-form button {
-  background: var(--accent-color);
+  background: #18538d;
   border: none;
   padding: 12px;
   border-radius: 8px;
@@ -1057,8 +1062,8 @@ section,
     position: absolute;
     content: "";
     width: 30%;
-    background-image: linear-gradient(180deg, color-mix(in srgb, #9AACC2, transparent 0%), color-mix(in srgb, #9AACC2, transparent 0%) 100%), linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0) 100%);
-    color: red;
+    /* background-image: linear-gradient(180deg, color-mix(in srgb, #9AACC2, transparent 0%), color-mix(in srgb, #9AACC2, transparent 0%) 100%), linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0) 100%); */
+    background-color: #041c36;
     top: 0;
     bottom: 0;
     z-index: 2;
@@ -1095,7 +1100,7 @@ section,
 
 .limited-offer .percent-off {
   font-size: 64px;
-  color: #9AACC2;
+  color: #18538D;
 }
 
 /* Countdown Timer */
@@ -1103,7 +1108,7 @@ section,
   width: 100%;
   aspect-ratio: 1 / 1;
   min-width: 100px;
-  border: 1px dashed #9AACC2;
+  border: 3px dashed #1484C2;
 }
 
 @media screen and (max-width: 767px) {
@@ -1111,7 +1116,7 @@ section,
     width: 100%;
     aspect-ratio: auto;
     min-width: 100px;
-    border: 1px dashed #9AACC2;
+    border: 1px dashed #1484C2;
   }
 }
 
@@ -1138,7 +1143,14 @@ section,
 #hours,
 #minutes,
 #seconds {
+  color: #1484C2 !important;
+  font-size: 38px;
   animation: pulse 1.5s infinite ease-in-out;
+}
+
+.countdown-timer a {
+  background-color: #1484C2 !important;
+  border: 1px solid #1484C2 !important;
 }
 
 /*--------------------------------------------------------------
@@ -1146,7 +1158,7 @@ section,
 --------------------------------------------------------------*/
 .why-choose-us {
   padding: 60px 20px !important;
-  background-image: url('/assets/img/advantages-section/advantages-section-bg.webp');
+  background-image: url("/assets/img/camera-inspection/why-choose-us-bg.webp");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1253,7 +1265,8 @@ section,
 # Advantages Section
 --------------------------------------------------------------*/
 .advantages {
-  background-image: url('/assets/img/advantages-section/advantages-section-bg.webp');
+  position: relative;
+  background-image: url("/assets/img/camera-inspection/advantage-bg.webp");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1264,9 +1277,13 @@ section,
 --------------------------------------------------------------*/
 .cta-section {
   position: relative;
+  background-image: url("/assets/img/section-bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.cta-section::before {
+/* .cta-section::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1300,7 +1317,7 @@ section,
   .cta-section::after {
     display: none;
   }
-}
+} */
 
 
 /*--------------------------------------------------------------
@@ -1395,6 +1412,22 @@ section,
     opacity: 1;
     transform: scale(1.12);
   }
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact-section {
+  position: relative;
+  background-image: url("/assets/img/footer-bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-section form button.btn {
+  background-color: #18538d !important;
+  border: 1px solid #18538d !important;
 }
 
 /*--------------------------------------------------------------
