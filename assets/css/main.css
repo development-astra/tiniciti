@@ -2462,3 +2462,67 @@ form button.btn:hover {
     justify-content: center;
   }
 }
+
+/*--------------------------------------------------------------
+# Mail Error Section
+--------------------------------------------------------------*/
+.mail-error .hero-btns {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .mail-error .hero-btns {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.mail-error .hero-btns .cta-btn {
+  display: inline-block;
+  border: 2px solid #093c71;
+  border-radius: 12px;
+  padding: 16px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  background: #093c71;
+  transition: all 0.3s ease;
+}
+
+.mail-error .hero-btns .cta-btn:hover {
+  background: #ffffff !important;
+  color: #093c71;
+}
+
+.mail-error .hero-btns .cta-btn .small-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mail-error .hero-btns .cta-btn .big-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 575px) {
+  .mail-error .hero-btns .cta-btn {
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .mail-error .hero-btns .hero-btns .cta-btn .small-text {
+    font-size: 14px;
+  }
+
+  .mail-error .hero-btns .cta-btn .big-text {
+    font-size: 28px;
+  }
+}
