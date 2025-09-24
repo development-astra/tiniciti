@@ -31,10 +31,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // From & To
         $mail->setFrom('aquapropc@gmail.com', 'Aqua Pro');
-        $mail->addAddress('development@astraresults.com');
+        $mail->addAddress('aquapropc@gmail.com');
 
         // Add CC recipients
         $mail->addCC('harry@astraresults.com');
+        $mail->addCC('development@astraresults.com');
 
         // Content
         $mail->isHTML(true);
