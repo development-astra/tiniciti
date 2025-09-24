@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require __DIR__ . '/../PHPMailer/src/Exception.php';
-require __DIR__ . '/../PHPMailer/src/PHPMailer.php';
-require __DIR__ . '/../PHPMailer/src/SMTP.php';
+require __DIR__ . 'https://aquapropc.com/aquapro-lp/PHPMailer/src/Exception.php';
+require __DIR__ . 'https://aquapropc.com/aquapro-lp/PHPMailer/src/PHPMailer.php';
+require __DIR__ . 'https://aquapropc.com/aquapro-lp/PHPMailer/src/SMTP.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $service = trim($_POST['service'] ?? '');
 
     if (!$name || !$email || !$phone || !$service) {
-        header("Location: /aqua-pro/form-error.html");
+        header("Location: https://aquapropc.com/aquapro-lp/form-error.html");
         exit;
     }
 
@@ -49,15 +49,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $mail->send();
 
-        header("Location: /aqua-pro/thank-you.html");
+        header("Location: https://aquapropc.com/aquapro-lp/thank-you.html");
         exit;
 
     } catch (Exception $e) {
-        header("Location: /aqua-pro/form-error.html");
+        header("Location: https://aquapropc.com/aquapro-lp/form-error.html");
         exit;
     }
 
 } else {
-    header("Location: /aqua-pro/form-error.html");
+    header("Location: https://aquapropc.com/aquapro-lp/form-error.html");
     exit;
 }

@@ -22,7 +22,7 @@
 /* Thin (100) */
 @font-face {
   font-family: 'Archivo Expanded';
-  src: url('/assets/fonts/archivo-fonts/archivo-expanded/woff2/archivo-expanded-thin.woff2') format('woff2');
+  src: url('https://aquapropc.com/aquapro-lp/assets/fonts/archivo-fonts/archivo-expanded/woff2/archivo-expanded-thin.woff2') format('woff2');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -31,7 +31,7 @@
 /* Light (300) */
 @font-face {
   font-family: 'Archivo Expanded';
-  src: url('/assets/fonts/archivo-fonts/archivo-expanded/woff2/archivo-expanded-light.woff2') format('woff2');
+  src: url('https://aquapropc.com/aquapro-lp/assets/fonts/archivo-fonts/archivo-expanded/woff2/archivo-expanded-light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 /* Regular (400) */
 @font-face {
   font-family: 'Archivo Expanded';
-  src: url('/assets/fonts/archivo-fonts/archivo-expanded/woff2/archivo-expanded-regular.woff2') format('woff2');
+  src: url('https://aquapropc.com/aquapro-lp/assets/fonts/archivo-fonts/archivo-expanded/woff2/archivo-expanded-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -49,7 +49,7 @@
 /* Medium (500) */
 @font-face {
   font-family: 'Archivo Expanded';
-  src: url('/assets/fonts/archivo-fonts/archivo-expanded/woff2/archivo-expanded-medium.woff2') format('woff2');
+  src: url('https://aquapropc.com/aquapro-lp/assets/fonts/archivo-fonts/archivo-expanded/woff2/archivo-expanded-medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -58,7 +58,7 @@
 /* SemiBold (600) */
 @font-face {
   font-family: 'Archivo Expanded';
-  src: url('/assets/fonts/archivo-fonts/archivo-expanded/woff2/archivo-expanded-semibold.woff2') format('woff2');
+  src: url('https://aquapropc.com/aquapro-lp/assets/fonts/archivo-fonts/archivo-expanded/woff2/archivo-expanded-semibold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -67,7 +67,7 @@
 /* Bold (700) */
 @font-face {
   font-family: 'Archivo Expanded';
-  src: url('/assets/fonts/archivo-fonts/archivo-expanded/woff2/archivo-expanded-bold.woff2') format('woff2');
+  src: url('https://aquapropc.com/aquapro-lp/assets/fonts/archivo-fonts/archivo-expanded/woff2/archivo-expanded-bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -76,7 +76,7 @@
 /* Black (900) */
 @font-face {
   font-family: 'Archivo Expanded';
-  src: url('/assets/fonts/archivo-fonts/archivo-expanded/woff2/archivo-expanded-black.woff2') format('woff2');
+  src: url('https://aquapropc.com/aquapro-lp/assets/fonts/archivo-fonts/archivo-expanded/woff2/archivo-expanded-black.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -376,7 +376,7 @@ h6 {
   display: inline-block;
   width: 28px;
   height: 28px;
-  background: url('/assets/img/custom-icons/check-mark.svg') no-repeat center;
+  background: url('https://aquapropc.com/aquapro-lp/assets/img/custom-icons/check-mark.svg') no-repeat center;
   background-size: contain;
   vertical-align: middle;
 }
@@ -385,7 +385,7 @@ h6 {
   display: inline-block;
   width: 28px;
   height: 28px;
-  background: url('/assets/img/custom-icons/water-tap.svg') no-repeat center;
+  background: url('https://aquapropc.com/aquapro-lp/assets/img/custom-icons/water-tap.svg') no-repeat center;
   background-size: contain;
   vertical-align: middle;
 }
@@ -394,7 +394,7 @@ h6 {
   display: inline-block;
   width: 28px;
   height: 28px;
-  background: url('/assets/img/custom-icons/hand-holding-wrench.svg') no-repeat center;
+  background: url('https://aquapropc.com/aquapro-lp/assets/img/custom-icons/hand-holding-wrench.svg') no-repeat center;
   background-size: contain;
   vertical-align: middle;
 }
@@ -403,7 +403,7 @@ h6 {
   display: inline-block;
   width: 28px;
   height: 28px;
-  background: url('/assets/img/custom-icons/chat.svg') no-repeat center;
+  background: url('https://aquapropc.com/aquapro-lp/assets/img/custom-icons/chat.svg') no-repeat center;
   background-size: contain;
   vertical-align: middle;
 }
@@ -1455,7 +1455,7 @@ form button.btn:hover {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background: url('../../assets/img/why-us/icon.svg') no-repeat center;
+  background: url('https://aquapropc.com/aquapro-lp/assets/img/why-us/icon.svg') no-repeat center;
   background-size: contain;
 }
 
@@ -1749,7 +1749,7 @@ form button.btn:hover {
 --------------------------------------------------------------*/
 .advantages {
   position: relative;
-  background-image: url("/assets/img/camera-inspection/hero-bg-before.webp");
+  background-image: url("https://aquapropc.com/aquapro-lp/assets/img/camera-inspection/hero-bg-before.webp");
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1791,7 +1791,7 @@ form button.btn:hover {
 --------------------------------------------------------------*/
 .cta-section {
   position: relative;
-  background-image: url("/assets/img/section-bg.webp");
+  background-image: url("https://aquapropc.com/aquapro-lp/assets/img/section-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2053,7 +2053,7 @@ form button.btn:hover {
 --------------------------------------------------------------*/
 .contact-section {
   position: relative;
-  background-image: url("/assets/img/footer/footer-bg.webp");
+  background-image: url("https://aquapropc.com/aquapro-lp/assets/img/footer/footer-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
