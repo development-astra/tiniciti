@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require __DIR__ . 'https://aquapropc.com/aquapro-lp/PHPMailer/src/Exception.php';
-require __DIR__ . 'https://aquapropc.com/aquapro-lp/PHPMailer/src/PHPMailer.php';
-require __DIR__ . 'https://aquapropc.com/aquapro-lp/PHPMailer/src/SMTP.php';
+require __DIR__ . 'https://aquapropc.com/wp-includes/PHPMailer/src/Exception.php';
+require __DIR__ . 'https://aquapropc.com/wp-includes/PHPMailer/src/PHPMailer.php';
+require __DIR__ . 'https://aquapropc.com/wp-includes/PHPMailer/src/SMTP.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
