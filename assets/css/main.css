@@ -1096,7 +1096,7 @@ section,
   }
 
   .hero-content {
-    margin-top: 180px !important;
+    margin-top: 220px !important;
     text-align: center;
   }
 
@@ -1804,6 +1804,14 @@ form button.btn:hover {
   background-size: cover;
 }
 
+.advantages h4 {
+  letter-spacing: 10px;
+  font-size: 20px;
+  font-family: "Montserrat";
+  line-height: 130%;
+  color: #093C70;
+}
+
 .advantages p {
   letter-spacing: 0;
   font-size: 20px;
@@ -1832,6 +1840,32 @@ form button.btn:hover {
   color: #fff;
   font-size: 16px;
   flex-shrink: 0;
+}
+
+@media screen and (max-width: 767px) {
+
+  .advantages h4,
+  .advantages h2,
+  .advantages p {
+    text-align: center;
+  }
+
+  .advantages h4 {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .advantages h2 {
+    font-size: 28px !important;
+  }
+
+  .advantages ul li p {
+    text-align: start;
+  }
+
+  .advantages a {
+    width: 100%;
+  }
 }
 
 
@@ -2243,12 +2277,20 @@ form button.btn:hover {
     margin-bottom: 10px;
   }
 
+  .contact-section .hero-btns .cta-btn {
+    width: 100%;
+  }
+
   .contact-section .btn-number {
     font-size: 28px;
   }
 
   .contact-section .btn-text {
     font-size: 13px;
+  }
+
+  .contact-section h4 {
+    letter-spacing: 5px;
   }
 
   .contact-section form button.btn {
