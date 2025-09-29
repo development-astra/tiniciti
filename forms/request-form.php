@@ -24,18 +24,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'aquapropc@gmail.com';
-        $mail->Password   = 'vmxgpykbazkwakhg';
+        // $mail->Username   = 'aquapropc@gmail.com';
+        // $mail->Password   = 'vmxgpykbazkwakhg';
+        
+        $mail->Username   = 'aquaprolpleads@gmail.com';
+        $mail->Password   = '@l03e1t3';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 
         // From & To
-        $mail->setFrom('aquapropc@gmail.com', 'Aqua Pro');
-        $mail->addAddress('aquapropc@gmail.com');
+        $mail->setFrom('aquaprolpleads@gmail.com', 'Aqua Pro');
+        $mail->addAddress('aquaprolpleads@gmail.com');
 
         // Add CC recipients
         $mail->addCC('harry@astraresults.com');
         $mail->addCC('development@astraresults.com');
+        
+        $mail->addCC('joseph@astraresults.com');
 
         // Content
         $mail->isHTML(true);
