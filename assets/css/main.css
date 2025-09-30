@@ -1244,7 +1244,7 @@ section,
   }
 
   .hero-content {
-    margin-top: 250px !important;
+    margin-top: 200px !important;
     text-align: center;
   }
 
@@ -1434,7 +1434,7 @@ section,
   }
 
   .hero .hero-content .hero-btns .cta-btn .big-text {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 
@@ -1640,7 +1640,7 @@ form button.btn:hover {
   margin-bottom: 12px;
   display: flex;
   align-items: flex-start;
-  font-weight: 500;
+  font-weight: 700;
   color: #232F3A;
 }
 
@@ -1650,8 +1650,8 @@ form button.btn:hover {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   background: url('https://aquapropc.com/aquapro-lp/assets/img/why-us/icon.svg') no-repeat center;
   background-size: contain;
 }
@@ -1693,13 +1693,14 @@ form button.btn:hover {
   }
 
   .why-choose-us h4 {
-    font-size: 16px;
+    font-size: 19px;
     letter-spacing: 5px;
   }
 
   .why-choose-us h1 {
-    font-size: 28px;
+    font-size: 31px;
     letter-spacing: -1px;
+    padding-bottom: 5px;
   }
 
   .why-choose-us p {
@@ -1708,16 +1709,20 @@ form button.btn:hover {
   }
 
   .why-choose-us ul {
-    font-size: 16px;
+    font-size:20px;
     text-align: left;
     display: inline-block;
   }
 
   .why-choose-us ul li {
-    padding-left: 28px;
+    padding-left: 38px;
     margin-bottom: 8px;
   }
-
+   /* Adjust the icon positioning for mobile */
+  .why-choose-us ul li::before {
+    top: 30%; /* Center vertically */
+    transform: translateY(-50%);
+  }
   .why-choose-us .btn {
     font-size: 16px;
     padding: 12px 24px;
@@ -1728,7 +1733,7 @@ form button.btn:hover {
   }
 
   .why-choose-us img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     margin-top: 2rem;
   }
@@ -1774,12 +1779,12 @@ form button.btn:hover {
 
 @media screen and (max-width: 767px) {
   .services h4 {
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 5px;
   }
 
   .services h1 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .services p {
