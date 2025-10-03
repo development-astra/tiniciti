@@ -1335,6 +1335,12 @@ section,
 }
 
 @media (max-width: 767px) {
+  .hero .hero-content {
+    margin-top: 60% !important;
+  }
+}
+
+@media (max-width: 767px) {
   .hero .hero-content h1 {
     font-size: 2rem;
     letter-spacing: 0.5px;
