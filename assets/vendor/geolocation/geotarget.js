@@ -37,7 +37,7 @@
         }
     }
 
-    const csvUrl = "https://aquapropc.com/aquapro-lp/locations.csv";
+    const csvUrl = "/locations.csv";
     const locations = await fetchLocationsCSV(csvUrl);
 
     const params = new URLSearchParams(window.location.search);
