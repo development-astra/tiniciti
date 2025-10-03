@@ -1457,7 +1457,7 @@ form button.btn {
 }
 
 form button.btn:hover {
-  background-color: #134458;
+  background-color: #202124;
   color: #11262a;
 }
 
@@ -1473,7 +1473,7 @@ form button.btn:hover {
   }
 
   form button.btn {
-    font-size: 16px;
+    font-size: 10px;
     padding: 14px;
   }
 
