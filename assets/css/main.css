@@ -1292,6 +1292,17 @@ section,
   z-index: 0;
 }
 
+/* Outdoor */
+.hero .hero-background.outdoor {
+  position: absolute;
+  inset: 10px;
+  border-radius: 16px;
+  background:
+    url("/assets/img/outdoor/hero-bg.webp") no-repeat center center/cover,
+    linear-gradient(135deg, #040E18 0%, #093C70 100%);
+  z-index: 0;
+}
+
 .hero .hero-overlay {
   position: absolute;
   top: 0;
@@ -1345,7 +1356,7 @@ section,
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 62px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 120%;
   letter-spacing: -3.6px;
   text-transform: uppercase;
@@ -1643,13 +1654,13 @@ form button.btn:hover {
   color: #000000;
 }
 
-.why-choose-us h1 {
-  letter-spacing: -1.92px;
-  font-size: 60px;
+.why-choose-us h1{
   font-family: "Montserrat";
-  line-height: 100%;
-  color: #202124;
-  font-weight: bold;
+  font-weight: 800;                
+  font-size: clamp(20px, 6vw, 46px);
+  line-height: 0.95;               
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
 }
 
 .why-choose-us p {
@@ -2322,6 +2333,7 @@ form button.btn:hover {
 .testimonials .card .read-more-btn:hover {
   color: #0c6afa !important;
 }
+
 
 /*--------------------------------------------------------------
 # Contact Section
