@@ -1281,6 +1281,17 @@ section,
   z-index: 0;
 }
 
+/* Cabinet */
+.hero .hero-background.cabinet {
+  position: absolute;
+  inset: 10px;
+  border-radius: 16px;
+  background:
+    url("/assets/img/cabinet/hero-bg.webp") no-repeat center center/cover,
+    linear-gradient(135deg, #040E18 0%, #093C70 100%);
+  z-index: 0;
+}
+
 .hero .hero-overlay {
   position: absolute;
   top: 0;
