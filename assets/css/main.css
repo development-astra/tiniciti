@@ -1259,12 +1259,24 @@ section,
   }
 }
 
+/* Kitchen */
 .hero .hero-background {
   position: absolute;
   inset: 10px;
   border-radius: 16px;
   background:
     url("/assets/img/kitchen/hero-bg.webp") no-repeat center center/cover,
+    linear-gradient(135deg, #040E18 0%, #093C70 100%);
+  z-index: 0;
+}
+
+/* Bath */
+.hero .hero-background.bath {
+  position: absolute;
+  inset: 10px;
+  border-radius: 16px;
+  background:
+    url("/assets/img/bath/hero-bg.webp") no-repeat center center/cover,
     linear-gradient(135deg, #040E18 0%, #093C70 100%);
   z-index: 0;
 }
