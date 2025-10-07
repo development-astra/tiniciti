@@ -2842,20 +2842,20 @@ form button.btn:hover {
 
 .mail-error .hero-btns .cta-btn {
   display: inline-block;
-  border: 2px solid #093c71;
+  border: 2px solid #2C296C;
   border-radius: 12px;
   padding: 16px 40px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
-  background: #093c71;
+  background: #2C296C;
   transition: all 0.3s ease;
 }
 
 .mail-error .hero-btns .cta-btn:hover {
   background: #ffffff !important;
-  color: #093c71;
+  color: #2C296C;
 }
 
 .mail-error .hero-btns .cta-btn .small-text {

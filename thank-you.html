@@ -30,8 +30,8 @@
     <meta name="keywords" content="">
 
     <!-- Favicons -->
-    <link href="https://aquapropc.com/aquapro-lp/assets/img/favicon.png" rel="icon">
-    <link href="https://aquapropc.com/aquapro-lp/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Default Font: Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,15 +40,70 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="https://aquapropc.com/aquapro-lp/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://aquapropc.com/aquapro-lp/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://aquapropc.com/aquapro-lp/assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="https://aquapropc.com/aquapro-lp/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="https://aquapropc.com/aquapro-lp/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="https://aquapropc.com/aquapro-lp/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Main CSS File -->
-    <link href="https://aquapropc.com/aquapro-lp/assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        /* Thank You Section */
+.thank-you {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thank-you-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-img {
+  max-width: 150px;
+  margin: 1.5rem auto;
+}
+
+.thank-you-title {
+  font-family: 'Archivo Expanded', sans-serif;
+  color: #202124;
+  font-weight: 700;
+}
+
+.thank-you-message {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.thank-you-btn {
+  background-color: #2C296C;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.thank-you-btn i {
+  color: #FFC107;
+  margin-right: 6px;
+}
+
+.thank-you-btn:hover {
+  background-color: #3a3584;
+  transform: translateY(-2px);
+}
+
+    </style>
 </head>
 
 <body class="bg-light">
@@ -65,19 +120,24 @@
 
     <!-- Thank You Card Section -->
     <section id="thank-you" class="thank-you d-flex align-items-center justify-content-center min-vh-100">
-        <div class="container text-center">
-            <div class="text-center p-4">
-                <i class="bi bi-check-circle-fill text-success" style="font-size: 5rem;"></i>
-                <h1 class="archivo-expanded-700 mt-4 display-4">Thank You!</h1>
-                <p class="manrope-400 lead mt-3">
-                    Your message has been successfully sent. We will get back to you as soon as possible.
-                </p>
-                <a href="/" class="btn btn-primary btn-lg mt-3">
-                    <i class="bi bi-house-door-fill"></i> Go Back Home
-                </a>
-            </div>
+    <div class="container text-center">
+        <div class="thank-you-card text-center p-4">
+        <!-- Icon or image -->
+        <img src="assets/img/thank-you.webp" alt="Thank You" class="thank-you-img img-fluid my-4">
+
+        <h1 class="archivo-expanded-700 mt-4 display-4 thank-you-title">THANK YOU!</h1>
+
+        <p class="lead mt-3 thank-you-message">
+            Your message has been successfully sent. We will get back to you as soon as possible.
+        </p>
+
+        <a href="/" class="btn btn-lg mt-3 thank-you-btn">
+            <i class="bi bi-house-door-fill"></i> Home
+        </a>
         </div>
-    </section><!-- End Thank You Card Section -->
+    </div>
+    </section>
+
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
@@ -87,15 +147,15 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="https://aquapropc.com/aquapro-lp/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://aquapropc.com/aquapro-lp/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="https://aquapropc.com/aquapro-lp/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="https://aquapropc.com/aquapro-lp/assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="https://aquapropc.com/aquapro-lp/assets/vendor/geolocation/geotarget.js"></script>
-    <script src="https://aquapropc.com/aquapro-lp/assets/vendor/readmore-readless/readmore-readless.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/geolocation/geotarget.js"></script>
+    <script src="assets/vendor/readmore-readless/readmore-readless.js"></script>
 
     <!-- Main JS File -->
-    <script src="https://aquapropc.com/aquapro-lp/assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
