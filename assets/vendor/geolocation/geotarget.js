@@ -26,7 +26,7 @@
     }
 
     // 2️⃣ Load CSV
-    const csvUrl = "https://tradeaudio.com/lp/locations.csv";
+    const csvUrl = "locations.csv";
     const locations = await fetchLocationsCSV(csvUrl);
 
     // 3️⃣ Get ?location parameter (if any)
