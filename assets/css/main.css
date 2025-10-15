@@ -2834,3 +2834,11 @@ form button.btn:hover {
     font-size: 28px;
   }
 }
+
+/*--------------------------------------------------------------
+# Thank You Section
+--------------------------------------------------------------*/
+.thank-you a.btn {
+  background-color: #2c296d;
+  color: #ffffff;
+}
