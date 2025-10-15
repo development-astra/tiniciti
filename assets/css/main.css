@@ -433,7 +433,7 @@ h6 {
 
 .header .container-fluid {
 
-  background: linear-gradient(135deg, #040E18 0%, #202124 100%);
+  background: linear-gradient(135deg, #eeeed2 0%, #ffffff 100%);
   border-radius: 10px;
   box-shadow: 0 11px 13.3px rgba(0, 0, 0, 0.25);
   margin-top: 1%;
@@ -552,13 +552,13 @@ h6 {
   /* Adjust header padding for mobile - MODIFIED */
   .header {
     padding: 15px 1%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-top: -0.75%;
-  z-index: 1000;
-  transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: -0.75%;
+    z-index: 1000;
+    transition: all 0.3s ease;
   }
 
   /* Container padding adjustment - ADDED */
@@ -754,7 +754,7 @@ h6 {
 
 /* Global Header on Scroll */
 .scrolled .header {
-  background: linear-gradient(135deg, #040E18 0%, #202124 100%);
+  background: linear-gradient(135deg, #eeeed2 0%, #ffffff 100%);
 }
 
 .scrolled .header .container-fluid {
@@ -1353,10 +1353,10 @@ section,
     justify-content: flex-start;
     padding-top: 20px;
     padding-bottom: 20px;
-  } 
+  }
 
 
-/* just a comment */
+  /* just a comment */
 
   .hero-carousel {
     position: absolute;
@@ -1372,8 +1372,9 @@ section,
     display: block;
 
     /* height: 130px; */
-    object-fit: fill;   /* Crop image to fit */
-    width: 100%;  
+    object-fit: fill;
+    /* Crop image to fit */
+    width: 100%;
     border-radius: 10px;
   }
 
@@ -1464,7 +1465,7 @@ section,
 .hero .hero-content h4 {
   padding-top: 3%;
   font-size: 1.2rem;
-  font-family : "Montserrat";
+  font-family: "Montserrat";
   font-weight: 400;
   color: #FFF;
   letter-spacing: 4px;
@@ -1720,11 +1721,11 @@ form button.btn:hover {
   color: #000000;
 }
 
-.why-choose-us h1{
+.why-choose-us h1 {
   font-family: "Montserrat";
-  font-weight: 800;                
+  font-weight: 800;
   font-size: clamp(20px, 6vw, 46px);
-  line-height: 0.95;               
+  line-height: 0.95;
   letter-spacing: -0.02em;
   margin: 0 0 16px;
 }
